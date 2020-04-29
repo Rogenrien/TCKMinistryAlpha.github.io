@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title> Third Culture Kid Ministry</title>
+    </head>
+    <style>
+      body{
+        margin: auto;
+        font-family: Arial;
+        overflow-x: hidden;
+      }
+      .menubar{
+        overflow: hidden;
+        background-color: rgb(255,255,255);
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        width: 100%;
+      }
+      .menubar a {
+        float: left;
+        color: rgb(0,0,0);
+        text-align: center;
+        padding: 20px 50px;
+        font-size: 25px;
+        text-decoration: none;
+        display: block;
+      }
+      .menubar a:hover {
+        background-color: rgb(0,0,0);
+        color: rgb(255,255,255);
+      }
+      .menubar a.active {
+        background-color: black;
+        color: white;
+        margin: 0;
+      }
+      #title{
+        background-color: rgb(150,132,161);
+        color: rgb(255,255,255);
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        padding-top: 130px;
+        padding-bottom: 50px;
+        margin: auto;
+        border: 0px;
+      }
+      #how-to{
+        background-color: rgb(191,237,193);
+        color: rgb(0,0,0);
+        width: 60%;
+        padding-top: 150px;
+        padding-bottom: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 0;
+      }
+      #how-to-t{
+        margin: auto;
+        position: relative;
+        bottom: 150px;
+        left: 10px;
+        line-height: 1.5;
+      }
+      .dropbtn{
+        background-color: white;
+        color: black;
+        padding: 20px;
+        font-size: 20px;
+        border: none;
+      }
+      .dropdown{
+        position: relative;
+        top: 66px;
+        left: 1200px;
+        display: inline-block;
+      }
+      .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      .dropdown-content a{
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      .dropdown-content a:hover{
+        background-color: #ddd;
+      }
+      .dropdown:hover .dropdown-content{
+        display: block;
+      }
+      .dropdown:hover .dropbtn{
+        background-color: #3e8e41;
+      }
+      #resource-container{
+        background-color: white;
+        color: black;
+        border-style: solid;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 100px;
+      }
+      #resource-container-t{
+        margin: auto;
+        text-align: center;
+        position: relative;
+        left: 30px;
+      }
+      #q{
+        font-size: 100px;
+      }
+    </style>
+  <body>
+    <div class="menubar">
+      <a href="index.html">Home</a>
+      <a href="TCK Ministry About.html">About</a>
+      <a class="active" href="TCK Ministry Resources.html">Resources for TCKs</a>
+      <a href="TCK Ministry Services.html">Services</a>
+      <a href="TCK Ministry News.html">News and Updates</a>
+    </div>
+    <h1 id="title"><font size="10">Resources for TCKs</font></h1>
+    <div id="how-to">
+      <div id="how-to-t">
+        <h2><font size="8">How to Navigate the Resource Page</font></h2>
+        <p><font size="4">You can navigate through the resource page by using the drop button
+           below and going through fields of interest. You can find some useful information
+          created by experts from our church including their contacts. As of now, there are
+          no resources, but there are some categories present based on the known experts in the church.
+        </font></p>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Fields of Interest</button>
+      <div class="dropdown-content">
+        <a href="Engineering.html">Engineering</a>
+        <a href="Medicine.html">Medicine</a>
+        <a href="Law.html">Law</a>
+        <a href="Science.html">Science</a>
+        <a href="Business.html">Business</a>
+      </div>
+    </div>
+    <div id="resource-container">
+      <div id="resource-container-t">
+        <h1>Choose Your Interests</h1>
+        <h1 id="q">???</h1>
+      </div>
+    </div>
+  </body>
+  </html>
